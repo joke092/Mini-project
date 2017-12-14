@@ -1,0 +1,22 @@
+
+body{
+	display:flex;
+	justify-content: center;
+}
+
+.zombie{
+	overflow: hidden;
+	width: 200px;
+	height: 312px;
+	background: url('../images/walkingdead.png') left center;
+}
+
+@keyframes walk {
+   100% { background-position: -2000px; }
+}
+
+.zombie:hover {
+	animation: walk 0.8s steps(10) infinite;
+}
+
+ 
